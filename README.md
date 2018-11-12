@@ -66,6 +66,16 @@ AssemblyScript compiles a strictly-typed subset of TypeScript (a typed superset 
 
 ## WebAssembly应用案例分析
 
+1、[teavm](https://github.com/konsoletyper/teavm)
+> what: java bytecode to javascript compiler
+
+2、[Figma](https://www.figma.com)
+> Browser based multiplayer collaboration UI design tool
+
+3、[Google Earth](https://www.google.com/earth/)
+
+4、[Egret engine](https://www.egret.com/en/)
+
 ## 参考文档
 
 [webassembly入门](https://blog.csdn.net/m549393829/article/details/81839822)
