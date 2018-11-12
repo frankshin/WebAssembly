@@ -76,6 +76,9 @@ AssemblyScript compiles a strictly-typed subset of TypeScript (a typed superset 
 
 4、[Egret engine](https://www.egret.com/en/)
 
+5、[Walt](https://github.com/ballercat/walt)
+> 这个工具可以让开发者不用熟悉c/c++或rust，使用js就可以写出接近机器码效率的网页应用，有点意思
+
 ## 参考文档
 
 [webassembly入门](https://blog.csdn.net/m549393829/article/details/81839822)
