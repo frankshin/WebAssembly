@@ -32,6 +32,7 @@ function fibonacci_js(n) {
 }
 
 load("./test.wasm").then(instance => {
+  console.info('instance:', instance)
 	// 导出模块中的函数
 	const fibonacci_wasm = instance.exports._fibonacci
 
