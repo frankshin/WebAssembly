@@ -7,7 +7,7 @@ WebAssembly是一种小体积，高加载速度的二进制编码格式
 WebAssembly不是用来取代JavaScript的。它被设计为和JavaScript一起协同工作，从而使得网络开发者能够利用两种语言的优势
 WebAssembly设计的目的不是为了手写汇编级别代码，而是为诸如C、C++等低级源语言提供一个高效的编译目标，使得以各种语言编写的代码都可以以接近原生的速度在web中运行
 
-AssemblyScript compiles a strictly-typed subset of TypeScript (a typed superset of JavaScript) to WebAssembly ahead of time (see: Limitations). It's not really a language on its own, though it provides several new WebAssembly-specific types and built-ins, but rather a compiler-variant for the same thing that integrates with Binaryen, Emscripten's WebAssembly backend, instead.
+AssemblyScript compiles a strictly-typed subset of TypeScript (a typed superset of JavaScript) to WebAssembly ahead of time (see: Limitations). Id, but rather a compiler-variant for the same thing that integrates with Binaryen, Emscripten's WebAssembly backend, instead.
 
 It's both possible to write close-to-the-metal WebAssembly as well as portable code that compiles to WebAssembly using asc and JavaScript using tsc. As the syntax is just TypeScript, existing tooling can be used in development as well (e.g. for syntax highlighting and refactoring) and common code can easily be shared between the two compilers.
 
@@ -49,7 +49,7 @@ WebAssembly是无版本，向后兼容的。这一点很有意义，相信大家
 
 ## 编译
 
-目前能编译成 WebAssembly 字节码的高级语言有：
+目前能编译成WebAssembly字节码的高级语言有：
 
 > AssemblyScript: 语法和typescript一致，为前端编写webassembly最佳选择
 
