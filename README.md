@@ -15,6 +15,8 @@ Integrating with Binaryen provides rich validation, optimization (for size and/o
 
 ## 为什么
 
+## 发展过程
+
 ## some concepts
 
 Module: 一个“代码单元”。包含编译好的二进制代码。可以高效的缓存、共享, 未来可以像一个ES2015模块一样导入/导出
@@ -45,22 +47,25 @@ WebAssembly被限制运行在一个虚拟的的沙箱执行环境中，运行时
 WebAssembly是无版本，向后兼容的。这一点很有意义，相信大家在开发中也很经常碰到版本带来的一些很坑爹的问题。由于系统体积很大，依赖繁杂，且高级依赖往往不兼容低版本，造成升级时的巨大困难 
 其次，WebAssembly无论是在PC端还是移动端，都支持各种浏览器平台
 
-## 当前转译现状
+## 编译
 
 目前能编译成 WebAssembly 字节码的高级语言有：
 
-- AssemblyScript: 语法和typescript一致，为前端编写webassembly最佳选择
+> AssemblyScript: 语法和typescript一致，为前端编写webassembly最佳选择
 
 detail：
 AssemblyScript compiles a strictly-typed subset of TypeScript (a typed superset of JavaScript) to WebAssembly ahead of time (see: Limitations). It's not really a language on its own, though it provides several new WebAssembly-specific types and built-ins, but rather a compiler-variant for the same thing that integrates with Binaryen, Emscripten's WebAssembly backend, instead.
 
-- c/c++, 官方推荐的语言
+> c/c++, 官方推荐的语言
 
-- Rust，语法复杂，对前端来说学习成本高
+c++从代码到浏览器中运营的执行过程如下：
+![执行流程](https://smallpang.oss-cn-shanghai.aliyuncs.com/WebAssembly/005NrfBdly1fgn4gtsn7tj316o0d20td.jpg)
 
-- kotlin，语法和java、js相似，语言学习成本低
+> Rust，语法复杂，对前端来说学习成本高
 
-- Golang，语法简单，学习成本低，但对于webassembly的支持还处在未正式发布阶段
+> kotlin，语法和java、js相似，语言学习成本低
+
+> Golang，语法简单，学习成本低，但对于webassembly的支持还处在未正式发布阶段
 
 ## 一个完整的code demo
 
@@ -83,3 +88,4 @@ AssemblyScript compiles a strictly-typed subset of TypeScript (a typed superset 
 
 [webassembly入门](https://blog.csdn.net/m549393829/article/details/81839822)
 [8个WebAssembly应用案例](https://blog.csdn.net/fRF0lw4/article/details/79267457)
+[让c代码在浏览器中运行-webassembly入门介绍](https://blog.csdn.net/sinat_32582203/article/details/73355211)
